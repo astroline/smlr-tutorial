@@ -1,0 +1,5 @@
+FROM java:8-jre
+MAINTAINER: Aleksey Yefimov <Aleksey.Yefimov@billing.ru>
+ADD ./targer/smlr.jar /app/
+CMD ["java", "-jar", "/app/smlr.jar"]
+EXPOSE 8080
